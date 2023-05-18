@@ -170,7 +170,7 @@ hr {
     text-align: right;
 }
 
-.welcome {
+#welcome {
     text-align: center;
     margin: 20px 0;
     font-size: 280%;
@@ -252,4 +252,38 @@ footer {
 
 #photos > img {
     width: 100%;
+}
+
+/* Media queries */
+
+/* From larger to medium size from 1200px wide to down */
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+        
+    }
+
+    hr {
+        display: none;
+    }
 }
